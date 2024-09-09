@@ -1,0 +1,45 @@
+---
+import TeletonLogo from "../assets/icons/TeletonLogo.astro";
+import W3CIcon from "../assets/icons/W3cIcon.astro";
+import GdIcon from "../assets/icons/GdIcon.astro";
+import UtemLogo from "../assets/logos/UtemLogo.astro";
+---
+
+<section class="bg-white grid grid-cols-2 gap-7 shadow-button py-20 rounded-lg">
+	<div class="w-full flex flex-col gap-16 items-center">
+		<h3 class="text-[#0D47A1] font-bold text-2xl text-center">
+			Instituciones patrocinantes
+		</h3>
+		<div class="flex items-center gap-16">
+			<div
+				class="bg-white shadow-button rounded-full w-[162.32px] h-[162.32px] flex items-center justify-center"
+			>
+				<UtemLogo />
+			</div>
+			<div
+				class="bg-white shadow-button rounded-full w-[162.32px] h-[162.32px] flex items-center justify-center"
+			>
+				<TeletonLogo />
+			</div>
+		</div>
+		<p class="w-2/3 text-center text-[#0D0D0D] text-pretty">
+			AccEx proporciona diferentes herramientas que ayudan a una navegación
+			menos compleja sin tener que depender completamente del mouse o teclado.
+		</p>
+	</div>
+	<div class="w-full flex flex-col gap-16 items-center">
+		<h3 class="text-[#0D47A1] font-bold text-2xl text-center">Alianzas</h3>
+		<div class="flex items-center gap-16">
+			<div
+				class="bg-white shadow-button rounded-full w-[162.32px] h-[162.32px] flex items-center justify-center"
+			>
+				<W3CIcon />
+			</div>
+			<div
+				class="bg-white shadow-button rounded-full w-[162.32px] h-[162.32px] flex items-center justify-center"
+			>
+				<GdIcon />
+			</div>
+		</div>
+	</div>
+</section>

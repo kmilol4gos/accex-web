@@ -1,0 +1,42 @@
+---
+
+import FacebookIcon from "./../assets/icons/FacebookIcon.astro";
+import TwitterIcon from "./../assets/icons/TwitterIcon.astro";
+import InstagramIcon from "./../assets/icons/InstagramIcon.astro";
+import LinkedinIcon from "./../assets/icons/LinkedinIcon.astro";
+import AccexLogo from "../assets/logos/AccexLogo.astro";
+---
+
+<footer
+	class="bg-[#1E88E5] text-white px-44 py-7 flex justify-between items-center"
+>
+	<section class="flex flex-col gap-7">
+		<AccexLogo />
+		<p class="font-medium w-1/2">
+			<span class="font-semibold">AccEx</span> un navegador que brinda accesibilidad
+			de manera segura.
+		</p>
+		<div class="flex gap-2">
+			<a href="#">
+				<FacebookIcon />
+			</a>
+			<a href="#">
+				<TwitterIcon />
+			</a>
+			<a href="#">
+				<InstagramIcon />
+			</a>
+			<a href="">
+				<LinkedinIcon />
+			</a>
+		</div>
+		<span> ©2024AccEx </span>
+	</section>
+	<section>
+		<ul class="flex gap-36">
+			<li><a href="#">Privacidad</a></li>
+			<li><a href="#">Contacto</a></li>
+			<li><a href="#">Acerca de AccEx</a></li>
+		</ul>
+	</section>
+</footer>

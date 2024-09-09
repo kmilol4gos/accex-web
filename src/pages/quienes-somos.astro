@@ -1,0 +1,28 @@
+---
+import Layout from "./../layouts/Layout.astro";
+import SectionContainer from "./../components/SectionContainer.astro";
+import Whoare from "./../components/Whoare.astro";
+import Mission from "./../components/Mission.astro";	
+import Interface from "./../components/Interface.astro";
+import Video from "./../components/Video.astro";
+---
+
+<Layout title="" description="">
+	<main>
+		<SectionContainer class="flex items-center px-44">
+			<Whoare />
+		</SectionContainer>
+		<section>
+			<Mission />
+		</section>
+		<div class="bg-custom-gradient">
+
+			<SectionContainer>
+				<Interface />
+			</SectionContainer>
+			<section>
+				<Video />
+			</section>
+		</div>
+		</main>
+</Layout>

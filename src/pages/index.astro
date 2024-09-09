@@ -1,0 +1,22 @@
+---
+import MacosIcon from "../assets/icons/MacosIcon.astro";
+import Hero from "../components/Hero.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Sponsor from "../components/Sponsor.astro";
+import World from "../components/World.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="AccEx" description="">
+	<main class="mx-44">
+		<SectionContainer class="flex items-center bg-[#fafafa]">
+			<Hero />
+		</SectionContainer>
+		<SectionContainer class="pt-32">
+			<World />
+		</SectionContainer>
+		<SectionContainer class="pt-32">
+			<Sponsor />
+		</SectionContainer>
+	</main>
+</Layout>

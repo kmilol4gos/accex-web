@@ -1,0 +1,66 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import { ViewTransitions } from "astro:transitions";
+import "@fontsource-variable/montserrat";
+
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<ViewTransitions />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<Navbar />
+		<slot />
+		<Footer />
+		<style is:global>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			*::before,
+			*::after {
+				box-sizing: border-box;
+			}
+			input,
+			button,
+			textarea,
+			select {
+				font-family: inherit;
+				font-size: inherit;
+			}
+			p {
+				text-wrap: pretty;
+			}
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				text-wrap: balance;
+			}
+
+			html {
+				font-family: "Montserrat Variable", sans-serif;
+			}
+			body {
+				background-color: #fbfbfb;
+			}
+		</style>
+	</body>
+</html>

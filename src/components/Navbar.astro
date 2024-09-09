@@ -1,0 +1,41 @@
+---
+import AccexLogo from "./../assets/logos/AccexLogo.astro";
+
+const links = [
+	{
+		href: "quienes-somos",
+		text: "¿Quiénes somos?",
+	},
+	{
+		href: "funcionalidades",
+		text: "Funcionalidades",
+	},
+	{
+		href: "testimonios",
+		text: "Testimonios",
+	},
+	{
+		href: "planes",
+		text: "Planes",
+	},
+];
+---
+
+<header
+	class="fixed top-0 right-0 w-full flex justify-between px-44 py-6 items-center z-50 bg-[#FBFBFB]"
+>
+	<a href="/">
+		<AccexLogo />
+	</a>
+	<ul class="flex gap-14">
+		{
+			links.map((link) => {
+				return (
+					<li>
+						<a href={link.href}>{link.text}</a>
+					</li>
+				);
+			})
+		}
+	</ul>
+</header>
