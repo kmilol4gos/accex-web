@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			boxShadow: {
-				button: " 4px 4px 4px 0px rgba(0, 0, 0, 0.3)",
+				button: "0px 0px 10px 0px rgba(0, 0, 0, 0.25);",
 			},
 			backgroundImage: {
 				"custom-gradient":

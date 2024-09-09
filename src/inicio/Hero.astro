@@ -1,0 +1,51 @@
+---
+import MacosIcon from "../assets/icons/MacosIcon.astro";
+import WindowsIcon from "../assets/icons/WindowsIcon.astro";
+---
+
+<article class="flex justify-center items-center">
+	<section>
+		<div class="flex flex-col gap-8">
+			<h1 class="font-medium text-5xl">
+				<span class="text-[#0D47A1] font-bold">AccEx:</span>
+				<br />
+				Experiencia accesible
+			</h1>
+			<p class="text-[#0D0D0D] w-3/4 font-normal">
+				En AccEx (<span class="italic font-medium"
+					>Accessible experience - Experiencia Accesible</span
+				>), nos motiva crear un mundo más accesible. Nuestra interfaz de
+				<span class="font-bold text-[#1e88e5]"> navegación asistida </span> ofrece
+				herramientas prácticas para facilitar la interacción por internet a personas
+				con discapacidad, en particular las de tipo visual y motriz.
+			</p>
+		</div>
+
+		<div class="flex flex-col gap-7 mt-8">
+			<h3 class="underline text-[#0D47A1]">
+				Descarga para <strong>Escritorio</strong>
+			</h3>
+			<div class="flex gap-7">
+				<a
+					class="rounded-lg w-[173px] h-[60px] flex justify-center items-center text-[#08295C] font-bold gap-3 shadow-button bg-white"
+					href="#"
+				>
+					<WindowsIcon />
+					Windows</a
+				>
+				<a
+					class="rounded-lg w-[173px] h-[60px] flex justify-center items-center text-[#08295C] font-bold gap-3 shadow-button bg-white"
+					href="#"
+				>
+					<MacosIcon />
+					MacOS</a
+				>
+			</div>
+		</div>
+	</section>
+	<img
+		src="./visualeshomeaccex.png"
+		alt="Imagen representativa"
+		class="h-[550px]"
+	/>
+</article>
