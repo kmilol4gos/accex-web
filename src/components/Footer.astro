@@ -1,42 +1,41 @@
 ---
-
-import FacebookIcon from "./../assets/icons/FacebookIcon.astro";
-import TwitterIcon from "./../assets/icons/TwitterIcon.astro";
-import InstagramIcon from "./../assets/icons/InstagramIcon.astro";
-import LinkedinIcon from "./../assets/icons/LinkedinIcon.astro";
-import AccexLogo from "../assets/logos/AccexLogo.astro";
+import FacebookIcon from './../assets/icons/FacebookIcon.astro';
+import TwitterIcon from './../assets/icons/TwitterIcon.astro';
+import InstagramIcon from './../assets/icons/InstagramIcon.astro';
+import LinkedinIcon from './../assets/icons/LinkedinIcon.astro';
+import FooterAccexLogo from '../assets/logos/FooterLogoAccex.astro';
 ---
 
 <footer
-	class="bg-[#1E88E5] text-white px-44 py-7 flex justify-between items-center"
+  class="bg-gradient-footer text-white px-44 py-7 flex justify-between items-center"
 >
-	<section class="flex flex-col gap-7">
-		<AccexLogo />
-		<p class="font-medium w-1/2">
-			<span class="font-semibold">AccEx</span> un navegador que brinda accesibilidad
-			de manera segura.
-		</p>
-		<div class="flex gap-2">
-			<a href="#">
-				<FacebookIcon />
-			</a>
-			<a href="#">
-				<TwitterIcon />
-			</a>
-			<a href="#">
-				<InstagramIcon />
-			</a>
-			<a href="">
-				<LinkedinIcon />
-			</a>
-		</div>
-		<span> ©2024AccEx </span>
-	</section>
-	<section>
-		<ul class="flex gap-36">
-			<li><a href="#">Privacidad</a></li>
-			<li><a href="#">Contacto</a></li>
-			<li><a href="#">Acerca de AccEx</a></li>
-		</ul>
-	</section>
+  <section class="flex flex-col gap-7">
+    <FooterAccexLogo class="text-white" />
+    <p class="font-medium w-1/2">
+      <span class="font-bold">ACCEX</span> es un navegador que brinda accesibilidad
+      de manera segura.
+    </p>
+    <div class="flex gap-2">
+      <a href="#" class="text-[#08295C]">
+        <FacebookIcon />
+      </a>
+      <a href="#" class="text-[#08295C]">
+        <TwitterIcon />
+      </a>
+      <a href="#" class="text-[#08295C]">
+        <InstagramIcon />
+      </a>
+      <a href="" class="text-[#08295C]">
+        <LinkedinIcon />
+      </a>
+    </div>
+    <span> ©2024. ACCEX </span>
+  </section>
+  <section>
+    <ul class="flex gap-36">
+      <li><a href="#">Acerca de AccEx</a></li>
+      <li><a href="#">Privacidad</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </section>
 </footer>

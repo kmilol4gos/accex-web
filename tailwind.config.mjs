@@ -14,6 +14,8 @@ export default {
           'linear-gradient(180deg, rgba(251, 251, 251, 0.15) 0%, rgba(30, 136, 229, 0.15) 55.27%, rgba(251, 251, 251, 0.15) 100%);',
         'gradient-sponsor':
           'linear-gradient(180deg, #1E88E5 0%, #0D47A1 86.01%);',
+        'gradient-footer':
+          'linear-gradient(180deg, #1E88E5 0%, #0D47A1 157.44%);',
       },
     },
   },
