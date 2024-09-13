@@ -1,26 +1,27 @@
 ---
-import MacosIcon from "../assets/icons/MacosIcon.astro";
-import Hero from "../inicio/Hero.astro";
-import SectionContainer from "../components/SectionContainer.astro";
-import Sponsor from "../inicio/Sponsor.astro";
-import Benefits from "../inicio/Benefits.astro";
-import Layout from "../layouts/Layout.astro";
+import MacosIcon from '../assets/icons/MacosIcon.astro';
+import Hero from '../inicio/Hero.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import Sponsor from '../inicio/Sponsor.astro';
+import Benefits from '../inicio/Benefits.astro';
+import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="AccEx" description="">
-	<main>
-		<SectionContainer class="flex items-center bg-[#fafafa] px-44">
-			<Hero />
-		</SectionContainer>
+  <main>
+    <SectionContainer class="flex items-center bg-[#fafafa] px-44">
+      <Hero />
+    </SectionContainer>
 
-		<div class="bg-gradient-inicio">
-			<section class="pt-32 px-44 h-full">
-				<Benefits />
-			<section/>
-
-			<SectionContainer class="pt-32 px-44">
-				<Sponsor />
-			</SectionContainer>
-		</div>
-	</main>
+    <div class="bg-gradient-inicio py-32">
+      <section class="px-44 h-full">
+        <Benefits />
+      </section>
+    </div>
+    <div class="bg-white pt-32">
+      <section class="">
+        <Sponsor />
+      </section>
+    </div>
+  </main>
 </Layout>
