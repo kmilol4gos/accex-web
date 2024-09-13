@@ -1,57 +1,57 @@
 ---
-import BeneficiosCard from "../components/BenefitCard.astro";
+import BeneficiosCard from '../components/BenefitCard.astro';
 
 const benefits = [
-	{
-		title: "Autonomía",
-		text: "Al no depender de un tercero al realizar tareas.",
-		imageUrl: "./representative-image-1.png",
-	},
-	{
-		title: "Independencia",
-		text: "Al actuar con libertad al realizar un trabajo.",
-		imageUrl: "./representative-image-2.png",
-	},
-	{
-		title: "Mayor autoestima",
-		text: "Al poder realizar actividades de forma optima e intuitiva.",
-		imageUrl: "./representative-image-3.png",
-	},
-	{
-		title: "Experiencia inclusiva",
-		text: "Para usuarios/as con interés en utilizar el navegador AccEx. ",
-		imageUrl: "./representative-image-4.png",
-	},
-	{
-		title: "Inclusión social",
-		text: "Para que los usuarios no se sientan excluidos del resto.",
-		imageUrl: "./representative-image-5.png",
-	},
-	{
-		title: "Personalización",
-		text: "Para que usuarios/as cambien el comportamiento del navegador para satisfacer sus necesidades específicas.",
-		imageUrl: "./representative-image-6.png",
-	},
+  {
+    title: 'Autonomía',
+    text: 'Al no depender de un tercero al realizar tareas.',
+    imageUrl: './representative-image-1.png',
+  },
+  {
+    title: 'Independencia',
+    text: 'Al actuar con libertad al realizar un trabajo.',
+    imageUrl: './representative-image-2.png',
+  },
+  {
+    title: 'Mayor autoestima',
+    text: 'Al poder realizar actividades de forma optima e intuitiva.',
+    imageUrl: './representative-image-3.png',
+  },
+  {
+    title: 'Experiencia inclusiva',
+    text: 'Para usuarios/as con interés en utilizar el navegador AccEx. ',
+    imageUrl: './representative-image-4.png',
+  },
+  {
+    title: 'Inclusión social',
+    text: 'Para que los usuarios no se sientan excluidos del resto.',
+    imageUrl: './representative-image-5.png',
+  },
+  {
+    title: 'Personalización',
+    text: 'Para que usuarios/as cambien el comportamiento del navegador para satisfacer sus necesidades específicas.',
+    imageUrl: './representative-image-6.png',
+  },
 ];
 ---
 
 <section class="flex flex-col gap-16">
-	<div>
-		<h1 class="text-[#0D47A1] font-bold text-4xl">
-			Beneficios AccEx
-			<br />
-			<span class="font-medium"> Para nuestros usuarios y usuarias </span>
-		</h1>
-	</div>
-	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-		{
-			benefits.map((benefit) => (
-				<BeneficiosCard
-					title={benefit.title}
-					text={benefit.text}
-					imageUrl={benefit.imageUrl}
-				/>
-			))
-		}
-	</div>
+  <div>
+    <h1 class="text-[#0D47A1] font-bold text-4xl">
+      Beneficios AccEx
+      <br />
+      <span class="font-medium"> Para nuestros usuarios y usuarias </span>
+    </h1>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {
+      benefits.map((benefit) => (
+        <BeneficiosCard
+          title={benefit.title}
+          text={benefit.text}
+          imageUrl={benefit.imageUrl}
+        />
+      ))
+    }
+  </div>
 </section>
