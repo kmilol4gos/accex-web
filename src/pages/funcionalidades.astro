@@ -3,39 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import HeroFuncionalidades from "../funcionalidades/HeroFuncionalidades.astro";
 import Tools from "../funcionalidades/Tools.astro";
-
-const tools = [
-  {
-    title: "Navegación por voz",
-    text: "Permite que las personas naveguen con su voz, sin usar el mouse o teclado.",
-    imageUrl: "./navegacion.png",
-  },
-  {
-    title: "Navegación por teclado",
-    text: "Permite a las personas navegar  mediante el teclado, sin utilizar el mouse.",
-    imageUrl: "./teclado.png",
-  },
-  {
-    title: "Personalización",
-    text: "Adapta el navegador a tus necesidades.",
-    imageUrl: "./personalizacion.png",
-  },
-  {
-    title: "Accesibilidad",
-    text: "Haz que la web sea accesible para todos.",
-    imageUrl: "./accesibilidad.png",
-  },
-  {
-    title: "Interacción",
-    text: "Interactúa con la web de forma sencilla.",
-    imageUrl: "./interaccion.png",
-  },
-  {
-    title: "Ayuda",
-    text: "Recibe ayuda en cualquier momento.",
-    imageUrl: "./ayuda.png",
-  },
-];
+import Tipos from "../funcionalidades/Tipos.astro";
 ---
 
 <Layout title="" description="">
@@ -46,6 +14,9 @@ const tools = [
     <div class="bg-gradient-inicio">
       <SectionContainer class="px-44 flex flex-col justify-center">
         <Tools />
+      </SectionContainer>
+      <SectionContainer class="px-44 flex flex-col justify-center">
+        <Tipos />
       </SectionContainer>
     </div>
   </main>
