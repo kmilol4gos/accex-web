@@ -1,9 +1,47 @@
-<section>
+---
+import ToolsCard from "../components/ToolsCard.astro";
+
+const tools = [
+  {
+    title: "Navegación por voz",
+    text: "Permite que las personas naveguen con su voz, sin usar el mouse o teclado.",
+    imageUrl: "./navegacion.png",
+  },
+  {
+    title: "Navegación por teclado",
+    text: "Permite a las personas navegar  mediante el teclado, sin utilizar el mouse.",
+    imageUrl: "./teclado.png",
+  },
+  {
+    title: "Navegación numérica",
+    text: "Permite a las personas navegar por el sitio web mediante el teclado numérico.",
+    imageUrl: "./numerica.png",
+  },
+  {
+    title: "Lector de pantalla",
+    text: "Permite a las personas escuchar una voz que lea los textos y los guíe con claridad y precisión.",
+    imageUrl: "./pantalla.png",
+  },
+];
+---
+
+<section class="flex flex-col gap-16">
   <div>
     <h2 class="text-[#0D47A1] text-3xl">
       <strong>Herramientas accesibles </strong>
       <br />
       para nuestros usuarios y usuarias
     </h2>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    {
+      tools.map((tool) => (
+        <ToolsCard
+          title={tool.title}
+          text={tool.text}
+          imageUrl={tool.imageUrl}
+        />
+      ))
+    }
   </div>
 </section>
